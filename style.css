@@ -1,0 +1,17 @@
+* {
+    font-family: 'helvetica', sans-serif;
+    color: black;
+}
+
+#logo {
+    width: 10%;
+    height: auto;
+}
+
+.logo-words {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 150px;
+}
