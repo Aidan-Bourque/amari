@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <link rel="icon" href="assets\icon.png">
-    <title>Carrara</title>
+    <link rel="icon" type="image/png" href="assets/logo1.png">
+    <title>Carrara | Contact</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="assets\logo1.png" alt="Carrara Logo" id="logo">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+            <img src="assets/logo1.png" alt="Carrara Logo" id="logo">
+            <span class="d-none d-md-inline text-uppercase text-light fw-semibold" style="letter-spacing: 0.16em; font-size: 0.72rem;">Carrara</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -20,21 +21,96 @@
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="./about.html">About Us</a>
+            <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="./services.html">Services</a>
+            <a class="nav-link" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact</a>
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
             </li>
         </ul>
         </div>
     </div>
     </nav>
+
+    <main class="page-shell">
+        <section class="section">
+            <p class="eyebrow">Contact</p>
+                <h2>Send the brief.</h2>
+            <p>Use the form below for sourcing, gifting, and general requests. We usually reply within one business day.</p>
+            <div class="contact-grid">
+                <article class="contact-card">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label" for="fullName">Full name</label>
+                                <input class="form-control" id="fullName" type="text" placeholder="Your name">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="emailAddress">Email</label>
+                                <input class="form-control" id="emailAddress" type="email" placeholder="you@example.com">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="serviceType">Request type</label>
+                                <select class="form-select" id="serviceType">
+                                    <option selected>Private shopping</option>
+                                    <option>Gift concierge</option>
+                                    <option>Travel & lifestyle</option>
+                                    <option>Event styling</option>
+                                    <option>Membership support</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="budgetRange">Budget range</label>
+                                <input class="form-control" id="budgetRange" type="text" placeholder="$1,000 - $5,000+">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label" for="projectNotes">Tell us what you need</label>
+                                <textarea class="form-control" id="projectNotes" rows="6" placeholder="Share the occasion, style direction, deadline, and any preferred brands."></textarea>
+                            </div>
+                            <div class="col-12 d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                                <span class="mini-pill">Reply within 24 hours</span>
+                                <button class="btn btn-primary" type="submit">Send request</button>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+
+                <article class="contact-card">
+                    <p class="eyebrow">Contact info</p>
+                    <h3>Contact details</h3>
+                    <div class="contact-list">
+                        <div class="mini-card">
+                            <span>Email</span>
+                            <strong class="d-block mt-1">hello@carrara.com</strong>
+                        </div>
+                        <div class="mini-card">
+                            <span>Phone</span>
+                            <strong class="d-block mt-1">+1 (555) 014-2200</strong>
+                        </div>
+                        <div class="mini-card">
+                            <span>Hours</span>
+                            <strong class="d-block mt-1">Monday - Friday, 9am to 6pm</strong>
+                        </div>
+                        <div class="mini-card">
+                            <span>Best for</span>
+                            <strong class="d-block mt-1">Sourcing, gifting, and support</strong>
+                        </div>
+                    </div>
+                    <div class="subtle-line"></div>
+                    <p class="mb-0">If your request is urgent, include the deadline in the form.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Carrara
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>

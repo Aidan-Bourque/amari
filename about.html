@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <link rel="icon" href="assets\icon.png">
-    <title>Carrara</title>
+    <link rel="icon" type="image/png" href="assets/logo1.png">
+    <title>Carrara | About</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="assets\logo1.png" alt="Carrara Logo" id="logo">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+            <img src="assets/logo1.png" alt="Carrara Logo" id="logo">
+            <span class="d-none d-md-inline text-uppercase text-light fw-semibold" style="letter-spacing: 0.16em; font-size: 0.72rem;">Carrara</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -20,22 +21,83 @@
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="./about.html">About Us</a>
+            <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="./services.html">Services</a>
+            <a class="nav-link" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
             </li>
         </ul>
         </div>
     </div>
     </nav>
 
+    <main class="page-shell">
+        <section class="about-grid">
+            <article class="about-card">
+                <p class="eyebrow">About Carrara</p>
+                <h2>A simple shopping service with a human touch.</h2>
+                <p>We help people source gifts, clothing, and home pieces without making the process feel heavy.</p>
+                <div class="subtle-line"></div>
+                <ul class="muted-list">
+                    <li>Clear recommendations with price and timing upfront.</li>
+                    <li>Help with gifts, travel, events, and wardrobe requests.</li>
+                    <li>One point of contact from brief to delivery.</li>
+                </ul>
+            </article>
+
+            <article class="about-card">
+                <p class="eyebrow">Our standard</p>
+                <h2>Clean choices, clear updates, and reliable follow-through.</h2>
+                <div class="detail-row">
+                    <div class="detail-card">
+                        <span class="mini-pill mb-3">Discretion</span>
+                        <p class="mb-0">Every request is handled with care and kept private.</p>
+                    </div>
+                    <div class="detail-card">
+                        <span class="mini-pill mb-3">Taste</span>
+                        <p class="mb-0">Selections are current and matched to your preferences.</p>
+                    </div>
+                    <div class="detail-card">
+                        <span class="mini-pill mb-3">Speed</span>
+                        <p class="mb-0">Shortlists come back quickly so decisions stay easy.</p>
+                    </div>
+                    <div class="detail-card">
+                        <span class="mini-pill mb-3">Care</span>
+                        <p class="mb-0">We manage packaging, follow-up, and delivery details.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <p class="eyebrow">Why it works</p>
+            <h2>Built to feel straightforward from start to finish.</h2>
+            <div class="stat-grid" style="grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 1.25rem;">
+                <div class="stat-card">
+                    <strong>Curated</strong>
+                    <span>We keep the edit focused and useful.</span>
+                </div>
+                <div class="stat-card">
+                    <strong>Concierge</strong>
+                    <span>Every request is handled by a real person.</span>
+                </div>
+                <div class="stat-card">
+                    <strong>Clear</strong>
+                    <span>Presentation and communication stay simple and consistent.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Carrara
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>

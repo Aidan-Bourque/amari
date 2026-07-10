@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <link rel="icon" href="assets\icon.png">
+    <link rel="icon" type="image/png" href="assets/logo1.png">
     <title>Carrara</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="assets\logo1.png" alt="Carrara Logo" id="logo">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+            <img src="assets/logo1.png" alt="Carrara Logo" id="logo">
+            <span class="d-none d-md-inline text-uppercase text-light fw-semibold" style="letter-spacing: 0.16em; font-size: 0.72rem;">Carrara</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -20,29 +21,147 @@
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="./about.html">About Us</a>
+            <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="./services.html">Services</a>
+            <a class="nav-link" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
             </li>
         </ul>
         </div>
     </div>
     </nav>
-    <div>
-        <img src="assets\logo.png" alt="Carrara Logo with words" class="logo-words">
-    </div>
-    <div class="content">
-        <div>
-            
-        </div>
-    </div>
+
+    <main class="page-shell">
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Concierge shopping</p>
+                <h1>Simple sourcing for gifts, style, and home.</h1>
+                <p class="lead">Carrara helps you find good pieces fast.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="services.html">Explore services</a>
+                    <a class="btn btn-outline-light" href="contact.html">Start a request</a>
+                </div>
+                <div class="subtle-line"></div>
+                <div class="trust-row">
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="mini-pill">24-hour sourcing</span>
+                        <span class="mini-pill">Private gifting</span>
+                        <span class="mini-pill">Worldwide delivery</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-panel">
+                <div class="hero-media">
+                    <div>
+                        <p class="pill mb-3">Featured services</p>
+                    </div>
+                    <div class="scorecard">
+                        <div>
+                            <strong>01</strong>
+                            <span>Curated options</span>
+                        </div>
+                        <div>
+                            <strong>24h</strong>
+                            <span>Priority replies</span>
+                        </div>
+                        <div>
+                            <strong>VIP</strong>
+                            <span>Gifting and styling</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-grid">
+                    <div class="stat-card">
+                        <strong>$8K+</strong>
+                            <span>Typical budgets</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong>48h</strong>
+                        <span>First edit in 48h</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <p class="eyebrow">Curated categories</p>
+            <h2>Clear options, quick replies.</h2>
+            <p>Send the brief. We send back the edit.</p>
+            <div class="card-grid">
+                <article class="service-card">
+                    <span class="service-tag">01 / Private shopping</span>
+                    <h3>Sourced to your brief</h3>
+                    <p>Apparel, accessories, and select pieces.</p>
+                </article>
+                <article class="service-card">
+                    <span class="service-tag">02 / Gifting</span>
+                    <h3>Memorable presentation</h3>
+                    <p>Gifts selected, wrapped, and delivered.</p>
+                </article>
+                <article class="service-card">
+                    <span class="service-tag">03 / Lifestyle</span>
+                    <h3>Objects with intention</h3>
+                    <p>Home, travel, and event items.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <p class="eyebrow">Featured drops</p>
+            <h2>Common requests.</h2>
+            <div class="collection-grid">
+                <article class="collection-card">
+                    <div class="image-tile mb-3"></div>
+                    <h3>Wardrobe edit</h3>
+                    <p>Outfit ideas and product links.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="mini-pill">From $1,500</span>
+                        <a href="services.html" class="text-decoration-underline">Learn more</a>
+                    </div>
+                </article>
+                <article class="collection-card">
+                    <div class="image-tile mb-3"></div>
+                    <h3>Gift concierge</h3>
+                    <p>Gift ideas, packaging, and delivery.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="mini-pill">From $850</span>
+                        <a href="services.html" class="text-decoration-underline">Learn more</a>
+                    </div>
+                </article>
+                <article class="collection-card">
+                    <div class="image-tile mb-3"></div>
+                    <h3>Event styling</h3>
+                    <p>Styling pieces for tables and hosting.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="mini-pill">From $2,200</span>
+                        <a href="services.html" class="text-decoration-underline">Learn more</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="cta-panel">
+            <div>
+                <p class="eyebrow mb-2">Next step</p>
+                <h2>Need something?</h2>
+                <p>We’ll send a shortlist.</p>
+            </div>
+            <div class="section-actions">
+                <a class="btn btn-primary" href="contact.html">Contact us</a>
+                <a class="btn btn-outline-light" href="about.html">Read our story</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Carrara
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
