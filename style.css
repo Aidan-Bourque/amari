@@ -47,7 +47,7 @@ img {
     position: sticky;
     top: 0;
     z-index: 20;
-    background: rgba(245, 242, 236, 0.96) !important;
+    background: black !important;
     border-bottom: 1px solid var(--border);
     backdrop-filter: blur(8px);
 }
@@ -63,7 +63,7 @@ img {
 }
 
 .nav-link {
-    color: var(--muted) !important;
+    color: white !important;
     font-size: 0.82rem;
     font-weight: 600;
 }
