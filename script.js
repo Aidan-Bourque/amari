@@ -5,6 +5,13 @@ const NAV_ITEMS = [
 	{ href: 'contact.html', label: 'Contact' },
 ];
 
+const SOCIAL_LINKS = [
+	{ href: 'https://www.facebook.com/', label: 'Facebook', icon: 'assets/facebook.png' },
+	{ href: 'https://www.instagram.com/', label: 'Instagram', icon: 'assets/instagram.png' },
+	{ href: 'https://www.tiktok.com/', label: 'TikTok', icon: 'assets/tiktok.png' },
+	{ href: 'https://twitter.com/', label: 'Twitter', icon: 'assets/twitter.png' },
+];
+
 function getCurrentPage() {
 	const path = window.location.pathname;
 	const page = path.split('/').pop();
@@ -25,6 +32,12 @@ function buildNavbar() {
 		`;
 	}).join('');
 
+	const socialLinks = SOCIAL_LINKS.map((item) => `
+		<a class="navbar-social-link" href="${item.href}" target="_blank" rel="noreferrer" aria-label="${item.label}">
+			<img src="${item.icon}" alt="" aria-hidden="true">
+		</a>
+	`).join('');
+
 	return `
 		<nav class="navbar navbar-expand-lg">
 			<div class="container-fluid">
@@ -36,9 +49,12 @@ function buildNavbar() {
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
+					<ul class="navbar-nav me-lg-auto">
 						${navItems}
 					</ul>
+					<div class="navbar-socials">
+						${socialLinks}
+					</div>
 				</div>
 			</div>
 		</nav>

@@ -7,7 +7,10 @@
     --border: #ded7cc;
     --text: #1e1e1e;
     --muted: #66615a;
-    --accent: #6b5e4a;
+    --accent: var(--text);
+    --nav-accent: rgb(173, 235, 179);
+    --accent-soft: rgba(173, 235, 179, 0.16);
+    --accent-border: rgba(173, 235, 179, 0.72);
     --shadow: 0 10px 30px rgba(20, 20, 20, 0.06);
 }
 
@@ -60,9 +63,44 @@ img {
     padding-block: 0.35rem;
 }
 
+.navbar-collapse {
+    align-items: center;
+}
+
 .navbar-nav {
     gap: 0.2rem;
     margin-left: auto;
+}
+
+.navbar-socials {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-left: 1rem;
+}
+
+.navbar-social-link {
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.04);
+    transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.navbar-social-link:hover {
+    transform: translateY(-1px);
+    border-color: var(--nav-accent);
+    background: rgba(173, 235, 179, 0.12);
+}
+
+.navbar-social-link img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
 }
 
 .nav-link {
@@ -74,7 +112,7 @@ img {
 
 .nav-link:hover,
 .nav-link.active {
-    color: rgb(173, 235, 179)!important;
+    color: var(--nav-accent) !important;
 }
 
 .navbar-toggler {
@@ -116,7 +154,7 @@ img {
 
 .eyebrow {
     margin: 0 0 0.75rem;
-    color: var(--accent);
+    color: var(--text);
     text-transform: uppercase;
     letter-spacing: 0.12em;
     font-size: 0.72rem;
@@ -260,7 +298,7 @@ img {
 .stat-card:hover,
 .detail-card:hover,
 .mini-card:hover {
-    border-color: #b9ad9b;
+    border-color: var(--accent-border);
     box-shadow: 0 12px 24px rgba(20, 20, 20, 0.08);
     transform: translateY(-1px);
 }
@@ -328,7 +366,7 @@ img {
     padding: 0.35rem 0.7rem;
     border: 1px solid var(--border);
     background: var(--surface-alt);
-    color: var(--accent);
+    color: var(--text);
     font-size: 0.74rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -377,8 +415,8 @@ textarea.form-control::placeholder {
 .form-control:focus,
 .form-select:focus,
 textarea.form-control:focus {
-    border-color: #b7ac9d !important;
-    box-shadow: 0 0 0 0.15rem rgba(107, 94, 74, 0.1) !important;
+    border-color: var(--accent-border) !important;
+    box-shadow: 0 0 0 0.15rem var(--accent-soft) !important;
 }
 
 .form-label {
@@ -427,6 +465,41 @@ footer {
     min-height: 180px;
     border: 1px solid var(--border);
     background: linear-gradient(180deg, #faf8f4, #ece6dc);
+}
+
+.team-photo-frame {
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: linear-gradient(180deg, #faf8f4, #ece6dc);
+    overflow: hidden;
+}
+
+.team-photo {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.about-media {
+    min-height: 170px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.about-media-story {
+    background-image:
+        linear-gradient(135deg, rgba(245, 242, 236, 0.25), rgba(20, 20, 20, 0.08)),
+        url('assets/logo1.png');
+}
+
+.about-media-standard {
+    background-image:
+        linear-gradient(135deg, rgba(245, 242, 236, 0.15), rgba(20, 20, 20, 0.06)),
+        url('assets/ncakey-logo-3.png');
 }
 
 @media (max-width: 992px) {
@@ -481,5 +554,9 @@ footer {
     .about-card h2,
     .cta-panel h2 {
         font-size: 1.8rem;
+    }
+
+    .navbar-socials {
+        margin: 0.75rem 0 0;
     }
 }
